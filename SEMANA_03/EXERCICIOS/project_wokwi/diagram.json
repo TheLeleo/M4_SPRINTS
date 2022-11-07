@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "author": "LPH Backspace",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-s3-devkitc-1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -63.93,
+      "left": -158.15,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 183.46,
+      "left": -354.84,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -57.01,
+      "left": 182.24,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -39.17,
+      "left": 216.2,
+      "attrs": { "color": "cyan" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -17.34,
+      "left": 256.2,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": -72.16,
+      "left": 148.7,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 102.59,
+      "left": 222.33,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bz1:1", "esp:GND.2", "black", [ "v0" ] ],
+    [ "esp:GND.2", "led4:C", "#8f4814", [ "v0" ] ],
+    [ "esp:GND.2", "led1:C", "#8f4814", [ "v0" ] ],
+    [ "esp:GND.2", "led2:C", "#8f4814", [ "v0" ] ],
+    [ "esp:GND.2", "led3:C", "#8f4814", [ "v0" ] ],
+    [ "led3:A", "esp:7", "cyan", [ "v0" ] ],
+    [ "led1:A", "esp:5", "cyan", [ "v0" ] ],
+    [ "led4:A", "esp:4", "cyan", [ "v0" ] ],
+    [ "esp:8", "bz1:2", "red", [ "h0" ] ],
+    [ "led2:A", "esp:42", "cyan", [ "v0" ] ],
+    [ "btn2:2.r", "esp:GND.4", "black", [ "v96.01", "h-197.9" ] ],
+    [ "btn2:1.r", "esp:20", "red", [ "h23.7", "v86.19" ] ],
+    [ "ldr1:VCC", "esp:3V3.2", "red", [ "h-0.98", "v-143.11" ] ],
+    [ "ldr1:AO", "esp:18", "cyan", [ "h68.22", "v-86.21" ] ],
+    [ "ldr1:GND", "esp:GND.1", "black", [ "v0.24", "h153.39", "v20.88" ] ]
+  ]
+}
