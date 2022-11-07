@@ -21,4 +21,4 @@ C - Faça uma versão simulada no Wowki
 <br>
 
 <h1>Projeto montado</h1>
-<img height="450px" width="300px" src="https://github.com/TheLeleo/M4_SPRINTS/blob/main/images/plaquinha.jpeg">
+<img height="450px" width="280px" src="https://github.com/TheLeleo/M4_SPRINTS/blob/main/images/plaquinha.jpeg">
