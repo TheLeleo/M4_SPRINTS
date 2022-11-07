@@ -2,12 +2,11 @@ const int ldr_input = 18;
 
 const int led_green = 4;
 const int led_red = 5;
-const int led_blue = 6;
+const int led_blue = 2;
 const int led_yellow = 7;
 
 
 const int save_btn = 20;
-const int play_btn = 2;
 
 const int buzzer = 8;
 
@@ -30,8 +29,6 @@ void setup() {
   pinMode(ldr_input, INPUT);
   // Input save btn
   pinMode(save_btn, INPUT);
-  // Input play btn
-  pinMode(play_btn, INPUT);
 
   // Output LED's
   pinMode(led_green, OUTPUT);
@@ -54,7 +51,7 @@ void loop() {
   // leitura do valor do LDR
   valorLDR = analogRead(ldr_input); 
   // conversão para uma escala de 0 a 5
-  luminosidade = map(valorLDR, 64, 8126, 0, 15); 
+  luminosidade = map(valorLDR, 64, 2000, 0, 15); 
   // conversão para frequencia de buzzer
   frequencia_buzzer = map(valorLDR, 64, 8126, 0, 1600);
   
