@@ -12,5 +12,12 @@ A - Utilize a interface IDE 2.0 do Arduino para construcao do codigo
 B - Monte o respectivo projeto e faça o funcionar.
 C - Faça uma versão simulada no Wowki
 
-
+<br>
+<h1>Diagrama do projeto</h1>
 <img src="https://github.com/TheLeleo/M4_SPRINTS/blob/main/images/esquema%20wokwi.PNG">
+
+
+<a href="https://wokwi.com/projects/346690742342648404">Link do projeto no Wokwi</a>
+<br>
+
+
