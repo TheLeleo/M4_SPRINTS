@@ -51,7 +51,7 @@ void loop() {
   // leitura do valor do LDR
   valorLDR = analogRead(ldr_input); 
   // conversão para uma escala de 0 a 5
-  luminosidade = map(valorLDR, 64, 2000, 0, 15); 
+  luminosidade = map(valorLDR, 64, 8700, 0, 15); 
   // conversão para frequencia de buzzer
   frequencia_buzzer = map(valorLDR, 64, 8126, 0, 1600);
   
