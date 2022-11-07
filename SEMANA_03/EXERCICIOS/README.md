@@ -13,4 +13,4 @@ B - Monte o respectivo projeto e faça o funcionar.
 C - Faça uma versão simulada no Wowki
 
 
-<img src="">
+<img src="https://github.com/TheLeleo/M4_SPRINTS/blob/main/images/esquema%20wokwi.PNG">
